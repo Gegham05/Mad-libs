@@ -40,7 +40,7 @@ if choice == "1":
         words.append(input(i))
 
     story += (
-        f"It was about {words[0]} {words[1]} ago when I arrived at the hospital in a {words[2]} The hospital is a/an\n"
+        f"It was about {words[0]} {words[1]} ago when I arrived at the hospital in a {words[2]}. The hospital is a/an\n"
         f"{words[3]} place, there are a lot of {words[4]} {words[5]} here. There are nurses here who have\n"
         f"{words[6]} {words[7]}. If someone wants to come into my room I told them that they have to {words[8]} first.\n"
         f"I've decorated my room with {words[9]} {words[10]}. Today I talked to a doctor and they were wearing a\n"
@@ -117,6 +117,16 @@ else:
         f"{words[14]}. It feels as though I have lived here for {words[15]} {words[16]}. I hope one day\n"
         f"you can visit, although the only way to get here now is {words[17]} on a {words[18]} {words[19]}!!"
     )
+
+random_endings = [
+    "THE END!",
+    "…and that's what happened!",
+    "No one will believe this story.",
+    "I still can't stop laughing about it.",
+    "What a day!"
+]
+
+story += "\n" + random.choice(random_endings)
 
 print("/// Your Mad libs story ///")
 print(story)
